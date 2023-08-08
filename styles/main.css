@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-.wrapper {
+.container {
   max-width: 1110px;
-  padding: 0 15px;
+  margin: 0 auto;
+
+  /* padding: 0 15px;*/
 }
 
 :root {
@@ -19,10 +21,107 @@
   --wight: #fff;
   --dark-grey: #333;
   --grey: #828282;
-  --light-grey: #EFEFEF;
+  --light-grey: #efefef;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
+}
+.header-top-nav {
+  background-color: var(--light-grey, #efefef);
+  padding: 17px 0;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 300ms easy-in-out;
+}
+.header-top-nav a {
+  color: var(--dark, #333);
+  font-size: 14px;
+}
+.header-top-nav li:last-child {
+  margin-right: 0;
+}
+.header-top-nav li {
+  margin-right: 30px;
+}
+.header-info .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header-info {
+  border-bottom: 1px solid #efefef;
+}
+.header-info a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.header-logo img {
+  width: 80px;
+  margin-right: 20px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.logo-name p {
+  color: var(--accent, #f13c6e);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone a {
+  text-decoration: none;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.phone button {
+  border-radius: 40px;
+  border: 2px solid var(--accent, #f13c6e);
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 13px 27px;
+  width: 170px;
+  margin-left: 40px;
+}
+.header-bottom-nav {
+  padding: 30px 0;
+}
+.header-bottom-nav li {
+  margin-right: 40px;
+}
+.header-bottom-nav a {
+  color: var(--black, #000);
+  font-size: 16px;
+}
+.header-bottom-nav li:last-child {
+  margin-right: 0;
+}
+.header-nav a:hover {
+  color: var(--accent, #f13c6e);
 }
